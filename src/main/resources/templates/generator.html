@@ -6,8 +6,8 @@
     <link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-<div class="container" >
-    <form class="TopForm" action="#" th:action="@{/calc}" th:object="${sett}" method="post">
+<form class="container" action="#" th:action="@{/calc}" th:object="${sett}" method="post">
+    <div class="TopForm" >
 
         <div class="inputDiv">
             <label class="inputLabel" >R начало</label> <br>
@@ -38,13 +38,13 @@
 
         <button class="inButton" type="submit">Старт</button>
 
-    </form>
+    </div>
 
-    <form class="txtAreaDiv pos" th:action="@{/calc}" th:object="${sett}" method="post">
-        <textarea class="txtArea" name="InTxt" placeholder="Ввести значение переменой или R1 C1" th:field="*{InTxt}"></textarea>
-        <textarea class="txtArea" readonly name="OutTxt" placeholder="Вывод результата" th:field="*{OutTxt}"></textarea>
-    </form>
-</div>
+    <div class="txtAreaDiv pos" >
+        <textarea class="txtArea" placeholder="Ввести значение переменой или R1 C1" th:field="*{InTxt}"></textarea>
+        <textarea class="txtArea" readonly id="outTxt" placeholder="Вывод результата" th:field="*{OutTxt}"></textarea>
+    </div>
+</form>
 
 <!-- <p th:text="'Привет, ' + ${title} + '!'" />-->
 </body>
