@@ -6,37 +6,37 @@
     <link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-<div class="container">
-    <form class="TopForm">
+<div class="container" >
+    <form class="TopForm" action="#" th:action="@{/calc}" th:object="${sett}" method="post">
 
         <div class="inputDiv">
             <label class="inputLabel" >R начало</label> <br>
-            <input type="number" class="inputField" name="R_Start" value="1">
+            <input type="number" class="inputField" name="R_Start" value="1" th:field="*{R_St}">
         </div>
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >R размер</label><br>
-            <input type="number" class="inputField" name="R_Size" value="1">
+            <input type="number" class="inputField" name="R_Size" value="1" th:field="*{R_Sz}">
         </div>
 
         <div class="inputDiv">
             <label class="inputLabel" >C начало</label><br>
-            <input type="number" class="inputField" name="C_Start" value="1">
+            <input type="number" class="inputField" name="C_Start" value="1" th:field="*{C_St}">
         </div>
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >C размер</label><br>
-            <input type="number" class="inputField" name="C_Size" value="1">
+            <input type="number" class="inputField" name="C_Size" value="1" th:field="*{C_Sz}">
         </div>
 
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >Приоритет</label><br>
-            <input type="text" class="inputField" name="RC_pri" placeholder="R / C">
+            <input type="text" class="inputField" name="RC_pri" placeholder="R / C" th:field="*{RC_p}">
         </div>
 
 
-        <button class="inButton" type="button" onclick="start">Старт</button>
+        <button class="inButton" type="submit">Старт</button>
 
     </form>
 
