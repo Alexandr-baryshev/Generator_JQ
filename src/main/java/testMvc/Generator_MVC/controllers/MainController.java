@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import testMvc.Generator_MVC.Cycle;
 
-
+// ЭТО ПОСЛЕДНИЙ КОМИТ SAVE, далее SAVE_JS
 @Controller
 public class MainController {
 
@@ -24,7 +24,7 @@ public class MainController {
 
    @RequestMapping(value = "/calc",  method = RequestMethod.POST)
    public String generator2(@ModelAttribute Sett sett, Model model) {
-//      model.addAttribute("title", "Передали данные");
+
 
 
       if (sett.getRC_p().equals("C")) {
@@ -36,7 +36,5 @@ public class MainController {
 
       return "generator";
    }
-
-
 
 }
