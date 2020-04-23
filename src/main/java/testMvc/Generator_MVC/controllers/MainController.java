@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import testMvc.Generator_MVC.Cycle;
 
-// ЭТО ПОСЛЕДНИЙ КОМИТ SAVE, далее SAVE_JS
+// НАЧАЛО SAVE_JS
 @Controller
 public class MainController {
 
