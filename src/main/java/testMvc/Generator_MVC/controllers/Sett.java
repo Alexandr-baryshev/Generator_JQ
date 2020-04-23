@@ -10,6 +10,9 @@ public class Sett implements Serializable {
    private int C_Sz;
 
    private String RC_p;
+   private String InTxt;
+   private String OutTxt;
+
 
    public int getR_St() {
       return R_St;
@@ -47,7 +50,24 @@ public class Sett implements Serializable {
       return RC_p;
    }
 
-   public void setP(String RC_p) {
+   public void setRC_p(String RC_p) {
       this.RC_p = RC_p;
    }
+
+   public String getInTxt() {
+      return InTxt;
+   }
+
+   public void setInTxt(String InTxt) {
+      this.InTxt = InTxt;
+   }
+
+   public String getOutTxt() {
+      return OutTxt;
+   }
+
+   public void setOutTxt(String OutTxt) {
+      this.OutTxt = OutTxt;
+   }
+
 }

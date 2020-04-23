@@ -40,10 +40,10 @@
 
     </form>
 
-    <div class="txtAreaDiv pos" >
-        <textarea class="txtArea" name="inTxt" placeholder="Ввести значение переменой или R1 C1"></textarea>
-        <textarea class="txtArea" readonly name="outTxt" placeholder="Вывод результата"></textarea>
-    </div>
+    <form class="txtAreaDiv pos" th:action="@{/calc}" th:object="${sett}" method="post">
+        <textarea class="txtArea" name="InTxt" placeholder="Ввести значение переменой или R1 C1" th:field="*{InTxt}"></textarea>
+        <textarea class="txtArea" readonly name="OutTxt" placeholder="Вывод результата" th:field="*{OutTxt}"></textarea>
+    </form>
 </div>
 
 <!-- <p th:text="'Привет, ' + ${title} + '!'" />-->
