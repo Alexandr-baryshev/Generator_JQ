@@ -1,4 +1,4 @@
-package testMvc.Generator_MVC;
+package testJQ.Generator_JQ;
 
 public class Cycle {
 

@@ -1,4 +1,4 @@
-package testMvc.Generator_MVC.controllers;
+package testJQ.Generator_JQ.controllers;
 
 import java.io.Serializable;
 

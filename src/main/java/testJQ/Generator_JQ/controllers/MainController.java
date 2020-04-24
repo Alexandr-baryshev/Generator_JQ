@@ -1,4 +1,4 @@
-package testMvc.Generator_MVC.controllers;
+package testJQ.Generator_JQ.controllers;
 
 import org.springframework.stereotype.Controller;
         import org.springframework.ui.Model;
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import testMvc.Generator_MVC.Cycle;
+import testJQ.Generator_JQ.Cycle;
 
 // НАЧАЛО SAVE_JS
 @Controller
