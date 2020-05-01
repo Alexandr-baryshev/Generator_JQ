@@ -1,48 +1,52 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html  lang="en">
 <head>
     <title>Генератор</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link href="style.css" rel="stylesheet" type="text/css"  >
+
+    <script type="text/javascript" src="jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="hello.js"></script>
 </head>
+
 <body>
-<form class="container" action="#" th:action="@{/calc}" th:object="${sett}" method="post">
+<form class="container" >
     <div class="TopForm" >
 
         <div class="inputDiv">
             <label class="inputLabel" >R начало</label> <br>
-            <input type="number" class="inputField" name="R_Start" value="1" th:field="*{R_St}">
+            <input type="number" class="inputField" id="startR_id" >
         </div>
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >R размер</label><br>
-            <input type="number" class="inputField" name="R_Size" value="1" th:field="*{R_Sz}">
+            <input type="number" class="inputField" id="sizeR_id" >
         </div>
 
         <div class="inputDiv">
             <label class="inputLabel" >C начало</label><br>
-            <input type="number" class="inputField" name="C_Start" value="1" th:field="*{C_St}">
+            <input type="number" class="inputField" id="startC_id" >
         </div>
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >C размер</label><br>
-            <input type="number" class="inputField" name="C_Size" value="1" th:field="*{C_Sz}">
+            <input type="number" class="inputField" id="sizeC_id" >
         </div>
 
 
         <div class="inputDiv dopMargin">
             <label class="inputLabel" >Приоритет</label><br>
-            <input type="text" class="inputField" name="RC_pri" placeholder="R / C" th:field="*{RC_p}">
+            <input type="text" class="inputField" id="priRC_id" placeholder="R / C" >
         </div>
 
 
-        <button class="inButton" type="submit">Старт</button>
+        <button class="inButton" id="submit" >Старт</button>
 
     </div>
 
     <div class="txtAreaDiv pos" >
-        <textarea class="txtArea" placeholder="Ввести значение переменой или R1 C1" th:field="*{InTxt}"></textarea>
-        <textarea class="txtArea" readonly id="outTxt" placeholder="Вывод результата" th:field="*{OutTxt}"></textarea>
+        <textarea class="txtArea" id="inputTxt_id" placeholder="Ввести значение переменой или R1 C1" ></textarea>
+        <textarea class="txtArea" id="outTxt_id" placeholder="Вывод результата" readonly  ></textarea>
     </div>
 </form>
 

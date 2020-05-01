@@ -6,32 +6,32 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import testJQ.Generator_JQ.Cycle;
+import testJQ.Generator_JQ.GeneratorFunc;
 
 // НАЧАЛО SAVE_JS
 @Controller
 public class MainController {
 
-   Cycle cycle = new Cycle();
+   GeneratorFunc gf = new GeneratorFunc();
 
    @GetMapping("/")
    public String generator( Model model) {
       model.addAttribute("title", "Главная rrr");
-      model.addAttribute("sett", new Sett());
+      model.addAttribute("sett", new GeneratorData());
 
       return "generator";
    }
 
    @RequestMapping(value = "/calc",  method = RequestMethod.POST)
-   public String generator2(@ModelAttribute Sett sett, Model model) {
+   public String generator2(@ModelAttribute GeneratorData gd, Model model) {
 
 
 
-      if (sett.getRC_p().equals("C")) {
-         sett.setOutTxt(cycle.sort_C(sett.getInTxt(), sett.getR_St(), sett.getR_Sz(), sett.getC_St(), sett.getC_Sz()));
+      if (gd.getPriRC().equals("C")) {
+         gd.setOutTxt(gf.sort_C(gd));
       }
-      if (sett.getRC_p().equals("R")) {
-         sett.setOutTxt(cycle.sort_R(sett.getInTxt(), sett.getR_St(), sett.getR_Sz(), sett.getC_St(), sett.getC_Sz()));
+      if (gd.getPriRC().equals("R")) {
+         gd.setOutTxt(gf.sort_R(gd));
       }
 
       return "generator";
