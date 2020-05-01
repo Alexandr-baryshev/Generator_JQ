@@ -1,11 +1,9 @@
 // ********** JQuery - Ajax  ************************
 
-$(document).ready(function() {
-    $.ajax({
-        url: "GeneratorData"
-    }).then(function(data) {
-        var inputTxt = $('#inputTxt_id').val(data.inputTxt)
-        $('#outTxt_id').append(data.outTxt);
+$(document).ready(function () {
+    $('#butt_id').on('click', function () {
+        alert('РАБОТАТЕТ')
+        $('#outTxt_id').val('HDJHDHDFHJFDHJF')
     });
 });
 
