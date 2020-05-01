@@ -13,6 +13,10 @@ public class GeneratorData implements Serializable {
    private String inputTxt;
    private String outTxt;
 
+   public GeneratorData(long incrementAndGet, String format) {
+
+   }
+
    public int getStartR() {
       return startR;
    }

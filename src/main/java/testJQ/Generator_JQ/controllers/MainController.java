@@ -1,9 +1,10 @@
 package testJQ.Generator_JQ.controllers;
 
-import org.springframework.stereotype.Controller;
-        import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
-import testJQ.Generator_JQ.GeneratorFunc;
+import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 // НАЧАЛО SAVE_JS
 @RestController
@@ -15,16 +16,13 @@ public class MainController {
 
 
 // ****** НАЧАЛО непонятной хрени ******** (непонятно что на что нужно заменить..)
+private static final String template = "Hello, %s!";
+   private final AtomicLong counter = new AtomicLong();
+
    @GetMapping("/")
-   public String generator( Model model) {
-      model.addAttribute("title", "Главная rrr");
-      model.addAttribute("sett", new GeneratorData());
+   public GeneratorData gd(@RequestParam(value = "name", defaultValue = "World") String name) {
+   return new GeneratorData(counter.incrementAndGet(), String.format(template, name));
 
-      return "generator";
-   }
-
-   @RequestMapping(value = "/calc",  method = RequestMethod.POST)
-   public String generator2(@ModelAttribute GeneratorData gd, Model model) {
 
 // ****** КОНЕЦ непонятной хрени ********
 
@@ -39,7 +37,7 @@ public class MainController {
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
-      return "generator";
+
    }
 
 }
