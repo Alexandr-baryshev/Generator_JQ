@@ -2,8 +2,29 @@
 
 $(document).ready(function () {
     $('#butt_id').on('click', function () {
-        alert('РАБОТАТЕТ')
-        $('#outTxt_id').val('HDJHDHDFHJFDHJF')
+        $.ajax({
+            url: 'GeneratorData.java'
+        });
+        // alert('РАБОТАТЕТ')
+
+        let gdJs = {
+            inputTxt: null,
+            startR: null,
+            sizeR: null,
+            startC: null,
+            sizeC: null
+        };
+
+        gdJs.inputTxt = $('#inputTxt_id').val()
+        gdJs.startR = $('#startR_id').val()
+        gdJs.sizeR = $('#sizeR_id').val()
+        gdJs.startC = $('#startC_id').val()
+        gdJs.sizeC = $('#sizeC_id').val()
+
+        $('#outTxt_id').val(gdJs)
+
+     // ...... связь потеряна...
+
     });
 });
 
