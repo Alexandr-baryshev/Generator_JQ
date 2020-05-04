@@ -7,7 +7,7 @@ $(document).ready(function () {
         });
         // alert('РАБОТАТЕТ')
 
-        let gdJs = {
+        let gd = {
             inputTxt: null,
             startR: null,
             sizeR: null,
@@ -15,13 +15,17 @@ $(document).ready(function () {
             sizeC: null
         };
 
-        gdJs.inputTxt = $('#inputTxt_id').val()
-        gdJs.startR = $('#startR_id').val()
-        gdJs.sizeR = $('#sizeR_id').val()
-        gdJs.startC = $('#startC_id').val()
-        gdJs.sizeC = $('#sizeC_id').val()
+        gd.inputTxt = $('#inputTxt_id').val()
+        gd.startR = $('#startR_id').val()
+        gd.sizeR = $('#sizeR_id').val()
+        gd.startC = $('#startC_id').val()
+        gd.sizeC = $('#sizeC_id').val()
 
-        $('#outTxt_id').val(gdJs)
+        let gdJson = JSON.stringify(gd);
+
+        typeof gdJson;
+
+        $('#outTxt_id').val(gdJson)
 
 
     });
