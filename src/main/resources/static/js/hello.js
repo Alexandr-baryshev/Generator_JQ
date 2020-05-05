@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $('#butt_id').on('click', function () {
 
-        let gd = {
+        let gdParam = {
             inputTxt: null,
             startR: null,
             sizeR: null,
@@ -12,17 +12,17 @@ $(document).ready(function () {
             res: null
         };
 
-        gd.inputTxt = $('#inputTxt_id').val()
-        gd.startR = $('#startR_id').val()
-        gd.sizeR = $('#sizeR_id').val()
-        gd.startC = $('#startC_id').val()
-        gd.sizeC = $('#sizeC_id').val()
+        gdParam.inputTxt = $('#inputTxt_id').val()
+        gdParam.startR = $('#startR_id').val()
+        gdParam.sizeR = $('#sizeR_id').val()
+        gdParam.startC = $('#startC_id').val()
+        gdParam.sizeC = $('#sizeC_id').val()
 
         $.ajax({
             type: "POST",
             url: "/data",
             // The key needs to match your method's input parameter (case-sensitive).
-            data: JSON.stringify(gd, null, 2),
+            data: JSON.stringify(gdParam, null, 2),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){

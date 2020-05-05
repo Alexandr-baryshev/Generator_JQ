@@ -34,8 +34,6 @@ private static final String template = "Hello, %s!";
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
-
-
       gd.setRes(gf.sort_C(gd));
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
