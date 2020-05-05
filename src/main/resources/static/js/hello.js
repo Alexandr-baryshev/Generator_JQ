@@ -26,8 +26,7 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
-                let d = JSON.parse(data);
-                let o = d.res;
+                let o = data.res;
                 $('#outTxt_id').val(o);
                 },
             failure: function(errMsg) {

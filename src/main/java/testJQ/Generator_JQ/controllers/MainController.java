@@ -34,7 +34,7 @@ private static final String template = "Hello, %s!";
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
-//      String xx = gf.sort_C(gd);
+
 
       gd.setRes(gf.sort_C(gd));
 
