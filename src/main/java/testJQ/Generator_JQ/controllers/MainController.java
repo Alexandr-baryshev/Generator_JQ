@@ -2,6 +2,7 @@ package testJQ.Generator_JQ.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import testJQ.Generator_JQ.GeneratorFunc;
@@ -22,7 +23,7 @@ private static final String template = "Hello, %s!";
 
    }
 
-   @PostMapping("/")
+   @PostMapping("/data")
    public ResponseEntity<GeneratorData> create(@RequestBody GeneratorData gd) {
 
 
@@ -33,9 +34,9 @@ private static final String template = "Hello, %s!";
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
-      String xx = gf.sort_C(gd);
+//      String xx = gf.sort_C(gd);
 
-      return xx;
+      return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
 
 }

@@ -2,19 +2,6 @@
 
 $(document).ready(function () {
     $('#butt_id').on('click', function () {
-        $.ajax({
-            type: "POST",
-            url: "@PostMapping(\"/\")",
-            // The key needs to match your method's input parameter (case-sensitive).
-            data: JSON.stringify(gd, null, 2),
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function(data){alert(data);},
-            failure: function(errMsg) {
-                alert(errMsg);
-            }
-        });
-        // alert('РАБОТАТЕТ')
 
         let gd = {
             inputTxt: null,
@@ -29,6 +16,20 @@ $(document).ready(function () {
         gd.sizeR = $('#sizeR_id').val()
         gd.startC = $('#startC_id').val()
         gd.sizeC = $('#sizeC_id').val()
+
+        $.ajax({
+            type: "POST",
+            url: "/data",
+            // The key needs to match your method's input parameter (case-sensitive).
+            data: JSON.stringify(gd, null, 2),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data){alert(data);},
+            failure: function(errMsg) {
+                alert(errMsg);
+            }
+        });
+        // alert('РАБОТАТЕТ')
 
         // let gdJson = JSON.stringify(gd, null, 2);
 
