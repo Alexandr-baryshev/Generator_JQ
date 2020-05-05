@@ -8,7 +8,8 @@ $(document).ready(function () {
             startR: null,
             sizeR: null,
             startC: null,
-            sizeC: null
+            sizeC: null,
+            res: null
         };
 
         gd.inputTxt = $('#inputTxt_id').val()
