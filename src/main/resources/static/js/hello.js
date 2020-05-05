@@ -25,7 +25,7 @@ $(document).ready(function () {
             data: JSON.stringify(gd, null, 2),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function(data){alert(data);},
+            success: function(data){JSON.parse(data)},
             failure: function(errMsg) {
                 alert(errMsg);
             }
