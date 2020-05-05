@@ -30,13 +30,9 @@ $(document).ready(function () {
                 alert(errMsg);
             }
         });
-        // alert('РАБОТАТЕТ')
-
-        // let gdJson = JSON.stringify(gd, null, 2);
-
-        // typeof gdJson;
-
-        $('#outTxt_id').val(data)
+        let d = JSON.parse(data);
+        let o = d.res;
+        $('#outTxt_id').val(o);
 
     });
 });

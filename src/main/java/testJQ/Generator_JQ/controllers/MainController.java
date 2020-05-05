@@ -36,6 +36,8 @@ private static final String template = "Hello, %s!";
 
 //      String xx = gf.sort_C(gd);
 
+      gd.setRes(gf.sort_C(gd));
+
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
 
