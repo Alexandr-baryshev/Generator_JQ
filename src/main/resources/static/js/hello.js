@@ -25,14 +25,16 @@ $(document).ready(function () {
             data: JSON.stringify(gd, null, 2),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function(data){JSON.parse(data)},
+            success: function(data){
+                let d = JSON.parse(data);
+                let o = d.res;
+                $('#outTxt_id').val(o);
+                },
             failure: function(errMsg) {
                 alert(errMsg);
             }
         });
-        let d = JSON.parse(data);
-        let o = d.res;
-        $('#outTxt_id').val(o);
+
 
     });
 });
