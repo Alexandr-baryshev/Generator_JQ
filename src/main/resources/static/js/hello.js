@@ -3,7 +3,16 @@
 $(document).ready(function () {
     $('#butt_id').on('click', function () {
         $.ajax({
-            url: 'GeneratorData.java'
+            type: "POST",
+            url: "@PostMapping(\"/\")",
+            // The key needs to match your method's input parameter (case-sensitive).
+            data: JSON.stringify(gd, null, 2),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(data){alert(data);},
+            failure: function(errMsg) {
+                alert(errMsg);
+            }
         });
         // alert('РАБОТАТЕТ')
 
@@ -21,12 +30,11 @@ $(document).ready(function () {
         gd.startC = $('#startC_id').val()
         gd.sizeC = $('#sizeC_id').val()
 
-        let gdJson = JSON.stringify(gd, null, 2);
+        // let gdJson = JSON.stringify(gd, null, 2);
 
         // typeof gdJson;
 
-        $('#outTxt_id').val(gdJson)
-
+        $('#outTxt_id').val(data)
 
     });
 });

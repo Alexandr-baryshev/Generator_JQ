@@ -2,15 +2,15 @@ package testJQ.Generator_JQ.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import testJQ.Generator_JQ.GeneratorFunc;
 
 
 @RestController
 public class MainController {
 
-//   GeneratorFunc gf = new GeneratorFunc();
+   GeneratorFunc gf = new GeneratorFunc();
 
 
 private static final String template = "Hello, %s!";
@@ -20,6 +20,10 @@ private static final String template = "Hello, %s!";
    public GeneratorData gd(@RequestParam(value = "name", defaultValue = "World") String name) {
    return new GeneratorData(counter.incrementAndGet(), String.format(template, name));
 
+   }
+
+   @PostMapping("/")
+   public ResponseEntity<GeneratorData> create(@RequestBody GeneratorData gd) {
 
 
 //      if (gd.getPriRC().equals("C")) {
@@ -29,7 +33,9 @@ private static final String template = "Hello, %s!";
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
+      String xx = gf.sort_C(gd);
 
+      return xx;
    }
 
 }
