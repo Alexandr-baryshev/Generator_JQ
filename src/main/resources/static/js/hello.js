@@ -21,9 +21,9 @@ $(document).ready(function () {
         gd.startC = $('#startC_id').val()
         gd.sizeC = $('#sizeC_id').val()
 
-        let gdJson = JSON.stringify(gd);
+        let gdJson = JSON.stringify(gd, null, 2);
 
-        typeof gdJson;
+        // typeof gdJson;
 
         $('#outTxt_id').val(gdJson)
 
