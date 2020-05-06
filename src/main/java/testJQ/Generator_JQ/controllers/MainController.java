@@ -24,7 +24,7 @@ private static final String template = "Hello, %s!";
    }
 
    @PostMapping("/data")
-   public ResponseEntity<GeneratorData> create(@RequestBody GeneratorData gd) {
+   public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {
 
 
 //      if (gd.getPriRC().equals("C")) {
@@ -34,7 +34,7 @@ private static final String template = "Hello, %s!";
 //         gd.setOutTxt(gf.sort_R(gd));
 //      }
 
-      gd.setRes(gf.sort_C(gd));
+      gd.setOutTxt(gf.sortFunc(gd));
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }

@@ -5,13 +5,29 @@ $(document).ready(function () {
 
         let gdParam = {
             inputTxt: null,
+            outTxt: null,
+
             startR: null,
             sizeR: null,
+            stepR: null,
+            targetR: null,
+            replaceR: null,
+
+
             startC: null,
             sizeC: null,
-            res: null
+            stepC: null,
+            targetC: null,
+            replaceC: null,
+
+            positX: null,
+            positY: null,
+            width: null,
+            height: null
+
         };
 
+        // ДОБАВИТЬ ПОЛЯ А HTML !!
         gdParam.inputTxt = $('#inputTxt_id').val()
         gdParam.startR = $('#startR_id').val()
         gdParam.sizeR = $('#sizeR_id').val()
@@ -26,8 +42,8 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
-                let o = data.res;
-                $('#outTxt_id').val(o);
+                let result = data.outTxt;
+                $('#outTxt_id').val(result);
                 },
             failure: function(errMsg) {
                 alert(errMsg);
@@ -37,6 +53,18 @@ $(document).ready(function () {
 
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ****** Просто JQuery  ******
