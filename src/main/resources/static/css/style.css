@@ -8,6 +8,10 @@ input:focus, select:focus, textarea:focus, button:focus {
    outline: none;
 }
 
+::placeholder {
+   color: #af9f91;
+}
+
 /*-----Переменные-----*/
 :root {
    --input-width: 70px;

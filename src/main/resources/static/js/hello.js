@@ -27,23 +27,44 @@ $(document).ready(function () {
 
         };
 
-
         gdParam.inputTxt = $('#inputTxt_id').val()
+        if ( gdParam.inputTxt === "" ) { gdParam.inputTxt = "R1 C1" }
+
         gdParam.outTxt = $('#outTxt_id').val()
 
+
         gdParam.startR = $('#startR_id').val()
+        if ( gdParam.startR === "" ) { gdParam.startR = 1 }
+
         gdParam.sizeR = $('#sizeR_id').val()
+        if ( gdParam.sizeR === "" ) { gdParam.sizeR = 1 }
+
         gdParam.stepR = $('#stepR_id').val()
+        if ( gdParam.stepR === "" ) { gdParam.stepR = 1 }
+
         gdParam.targetR = $('#targetR_id').val()
+        if ( gdParam.targetR === "" ) { gdParam.targetR = "R1" }
+
         gdParam.replaceR = $('#replaceR_id').val()
+        if ( gdParam.replaceR === "" ) { gdParam.replaceR = "R" }
 
 
         gdParam.startC = $('#startC_id').val()
-        gdParam.sizeC = $('#sizeC_id').val()
-        gdParam.stepC = $('#stepC_id').val()
-        gdParam.targetC = $('#targetC_id').val()
-        gdParam.replaceC = $('#replaceC_id').val()
+        if ( gdParam.startC === "" ) { gdParam.startC = 1 }
 
+        gdParam.sizeC = $('#sizeC_id').val()
+        if ( gdParam.sizeC === "" ) { gdParam.sizeC = 1 }
+
+        gdParam.stepC = $('#stepC_id').val()
+        if ( gdParam.stepC === "" ) { gdParam.stepC = 1 }
+
+        gdParam.targetC = $('#targetC_id').val()
+        if ( gdParam.targetC === "" ) { gdParam.targetC = "C1" }
+
+        gdParam.replaceC = $('#replaceC_id').val()
+        if ( gdParam.replaceC === "" ) { gdParam.replaceC = "C" }
+
+// НЕ ЗАБЫТЬ ПРО ЭТИ ПОЛЯ !!!!!!!!!!!!
         gdParam.positX = $('#positX_id').val()
         gdParam.positY = $('#positY_id').val()
         gdParam.width = $('#width_id').val()
@@ -64,7 +85,6 @@ $(document).ready(function () {
                 alert(errMsg);
             }
         });
-
 
     });
 });

@@ -18,17 +18,17 @@
         <div class="TopFormBlock ">
             <div class="inputDiv">
                 <label class="inputLabel" for="startR_id">R начало</label> <br>
-                <input type="number" class="inputField" id="startR_id">
+                <input type="number" class="inputField" id="startR_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="sizeR_id">R размер</label><br>
-                <input type="number" class="inputField" id="sizeR_id">
+                <input type="number" class="inputField" id="sizeR_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="stepR_id">R шаг</label><br>
-                <input type="number" class="inputField" id="stepR_id">
+                <input type="number" class="inputField" id="stepR_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
@@ -38,24 +38,24 @@
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="replaceR_id">R замена</label><br>
-                <input type="text" class="inputField " id="replaceR_id" placeholder="?">
+                <input type="text" class="inputField " id="replaceR_id" placeholder="R">
             </div>
         </div>
 
         <div class="TopFormBlock addLeft_10px">
             <div class="inputDiv">
                 <label class="inputLabel" for="startC_id">C начало</label> <br>
-                <input type="number" class="inputField" id="startC_id">
+                <input type="number" class="inputField" id="startC_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="sizeC_id">C размер</label><br>
-                <input type="number" class="inputField" id="sizeC_id">
+                <input type="number" class="inputField" id="sizeC_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="stepC_id">C шаг</label><br>
-                <input type="number" class="inputField" id="stepC_id">
+                <input type="number" class="inputField" id="stepC_id" placeholder="1">
             </div>
 
             <div class="inputDiv ">
@@ -65,7 +65,7 @@
 
             <div class="inputDiv ">
                 <label class="inputLabel" for="replaceC_id">C замена</label><br>
-                <input type="text" class="inputField " id="replaceC_id" placeholder="?">
+                <input type="text" class="inputField " id="replaceC_id" placeholder="С">
             </div>
         </div>
 
@@ -77,7 +77,9 @@
     </div>
 
     <div class="txtAreaDiv pos">
-        <textarea class="txtArea" id="inputTxt_id" placeholder="Ввести значение переменой (должно совпадать с целью, например - R1 C1)"></textarea>
+        <textarea class="txtArea" id="inputTxt_id" placeholder="Ввести значение. Должно совпадать с целью, например - R1 C1.
+В полях ввода отображаются значения по умолчанию."></textarea>
+
         <textarea class="txtArea" id="outTxt_id" placeholder="Вывод результата" readonly></textarea>
     </div>
 </div>
