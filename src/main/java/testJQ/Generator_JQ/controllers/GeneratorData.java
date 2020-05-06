@@ -29,10 +29,15 @@ public class GeneratorData implements Serializable {
    private int width;
    private int height;
 
+   public GeneratorData() {}
 
-   public GeneratorData(long incrementAndGet, String format) {
-
+   public String getId() {
+      return id;
    }
+   public void setId(String id) {
+      this.id = id;
+   }
+
 
    public String getInputTxt() {
       return inputTxt;
@@ -40,6 +45,14 @@ public class GeneratorData implements Serializable {
    public void setInputTxt(String txtInput) {
       this.inputTxt = txtInput;
    }
+
+   public String getOutTxt() {
+      return outTxt;
+   }
+   public void setOutTxt(String outTxt) {
+      this.outTxt = outTxt;
+   }
+
 
    public int getStartR() {
       return startR;
@@ -145,11 +158,5 @@ public class GeneratorData implements Serializable {
       this.replaceC = replaceC;
    }
 
-   public String getOutTxt() {
-      return outTxt;
-   }
 
-   public void setOutTxt(String outTxt) {
-      this.outTxt = outTxt;
-   }
 }
