@@ -2,7 +2,11 @@ package testJQ.Generator_JQ.controllers;
 
 import java.io.Serializable;
 
+
 public class GeneratorData implements Serializable {
+
+   @Id
+   public String id;
 
    private String inputTxt;
    private String outTxt;

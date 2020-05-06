@@ -27,7 +27,7 @@ $(document).ready(function () {
 
         };
 
-        // ДОБАВИТЬ ПОЛЯ А HTML !!
+
         gdParam.inputTxt = $('#inputTxt_id').val()
         gdParam.outTxt = $('#outTxt_id').val()
 
