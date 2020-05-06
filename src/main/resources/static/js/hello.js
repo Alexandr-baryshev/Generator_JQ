@@ -29,10 +29,25 @@ $(document).ready(function () {
 
         // ДОБАВИТЬ ПОЛЯ А HTML !!
         gdParam.inputTxt = $('#inputTxt_id').val()
+        gdParam.outTxt = $('#outTxt_id').val()
+
         gdParam.startR = $('#startR_id').val()
         gdParam.sizeR = $('#sizeR_id').val()
+        gdParam.stepR = $('#stepR_id').val()
+        gdParam.targetR = $('#targetR_id').val()
+        gdParam.replaceR = $('#replaceR_id').val()
+
+
         gdParam.startC = $('#startC_id').val()
         gdParam.sizeC = $('#sizeC_id').val()
+        gdParam.stepC = $('#stepC_id').val()
+        gdParam.targetC = $('#targetC_id').val()
+        gdParam.replaceC = $('#replaceC_id').val()
+
+        gdParam.positX = $('#positX_id').val()
+        gdParam.positY = $('#positY_id').val()
+        gdParam.width = $('#width_id').val()
+        gdParam.height = $('#height_id').val()
 
         $.ajax({
             type: "POST",
@@ -41,8 +56,8 @@ $(document).ready(function () {
             data: JSON.stringify(gdParam, null, 2),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function(data){
-                let result = data.outTxt;
+            success: function(dataX){
+                let result = dataX.outTxt;
                 $('#outTxt_id').val(result);
                 },
             failure: function(errMsg) {

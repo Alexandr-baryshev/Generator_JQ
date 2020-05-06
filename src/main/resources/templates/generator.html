@@ -1,53 +1,84 @@
 <!DOCTYPE HTML>
-<html  lang="en">
+<html lang="en">
 <head>
     <title>Генератор</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
-    <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
-    <script type="text/javascript" src="js/hello.js"></script>
-<!--    ../static/-->
+        <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
+        <script type="text/javascript" src="js/hello.js"></script>
+
+    <!--    ../static/-->
 </head>
 
 <body>
-<div class="container" >
-    <div class="TopForm" >
+<div class="container">
+    <div class="TopForm">
 
-        <div class="inputDiv">
-            <label class="inputLabel" >R начало</label> <br>
-            <input type="number" class="inputField" id="startR_id" >
+        <div class="TopFormBlock ">
+            <div class="inputDiv">
+                <label class="inputLabel" for="startR_id">R начало</label> <br>
+                <input type="number" class="inputField" id="startR_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="sizeR_id">R размер</label><br>
+                <input type="number" class="inputField" id="sizeR_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="stepR_id">R шаг</label><br>
+                <input type="number" class="inputField" id="stepR_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="targetR_id">R цель</label><br>
+                <input type="text" class="inputField" id="targetR_id" placeholder="R1">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="replaceR_id">R замена</label><br>
+                <input type="text" class="inputField " id="replaceR_id" placeholder="?">
+            </div>
         </div>
 
-        <div class="inputDiv dopMargin">
-            <label class="inputLabel" >R размер</label><br>
-            <input type="number" class="inputField" id="sizeR_id" >
+        <div class="TopFormBlock addLeft_10px">
+            <div class="inputDiv">
+                <label class="inputLabel" for="startC_id">C начало</label> <br>
+                <input type="number" class="inputField" id="startC_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="sizeC_id">C размер</label><br>
+                <input type="number" class="inputField" id="sizeC_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="stepC_id">C шаг</label><br>
+                <input type="number" class="inputField" id="stepC_id">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="targetC_id">C цель</label><br>
+                <input type="text" class="inputField" id="targetC_id" placeholder="C1">
+            </div>
+
+            <div class="inputDiv ">
+                <label class="inputLabel" for="replaceC_id">C замена</label><br>
+                <input type="text" class="inputField " id="replaceC_id" placeholder="?">
+            </div>
         </div>
 
-        <div class="inputDiv">
-            <label class="inputLabel" >C начало</label><br>
-            <input type="number" class="inputField" id="startC_id" >
+
+        <div class="TopFormBlock addLeft_10px">
+            <button class="inButton" id="butt_id">Старт</button>
         </div>
-
-        <div class="inputDiv dopMargin">
-            <label class="inputLabel" >C размер</label><br>
-            <input type="number" class="inputField" id="sizeC_id" >
-        </div>
-
-
-        <div class="inputDiv dopMargin">
-            <label class="inputLabel" >Приоритет</label><br>
-            <input type="text" class="inputField" id="priRC_id" placeholder="R / C" >
-        </div>
-
-
-        <button class="inButton" id="butt_id" >Старт</button>
 
     </div>
 
-    <div class="txtAreaDiv pos" >
-        <textarea class="txtArea" id="inputTxt_id" placeholder="Ввести значение переменой или R1 C1" ></textarea>
-        <textarea class="txtArea" id="outTxt_id" placeholder="Вывод результата" readonly  ></textarea>
+    <div class="txtAreaDiv pos">
+        <textarea class="txtArea" id="inputTxt_id" placeholder="Ввести значение переменой (должно совпадать с целью, например - R1 C1)"></textarea>
+        <textarea class="txtArea" id="outTxt_id" placeholder="Вывод результата" readonly></textarea>
     </div>
 </div>
 

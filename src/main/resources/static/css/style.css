@@ -25,8 +25,8 @@ body {
 
 }
 
-.dopMargin {
-   margin-right: 10px;
+.addLeft_10px {
+   margin-left: 20px;
 }
 
 /*--- Верхняя форма ввода ---*/
@@ -35,7 +35,13 @@ body {
    position: relative;
    padding: 5px;
    background-color: #274655;
+
 }
+
+.TopFormBlock {
+   display: inline-block;
+}
+
 
 .inputDiv {
    display: inline-block;
