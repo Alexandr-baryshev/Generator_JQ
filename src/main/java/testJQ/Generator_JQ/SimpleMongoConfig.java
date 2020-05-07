@@ -9,13 +9,13 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 public class SimpleMongoConfig {
 
    @Bean
-   public MongoClient mongo() {
+   public MongoClient mongoX() {
       return new MongoClient("localhost");
    }
 
    @Bean
-   public MongoTemplate mongoTemplate() throws Exception {
-      return new MongoTemplate(mongo(), "test");
-
+   public MongoTemplate mongoTemplateX() throws Exception {
+      return new MongoTemplate(mongoX(), "test");
    }
+
 }
