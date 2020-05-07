@@ -13,10 +13,10 @@ import testJQ.Generator_JQ.GeneratorFunc;
 public class MainController {
 
    @Autowired
-   private GeneratorDataRepository repositoryX;
+   private GeneratorDataRepository repository;
 
    @Autowired
-   protected MongoTemplate mongoTemplateX;
+   protected MongoTemplate mongoTemplate;
 
 
    GeneratorFunc gf = new GeneratorFunc();
@@ -25,6 +25,8 @@ public class MainController {
    public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {
 
       gd.setOutTxt(gf.sortFunc(gd));
+
+      mongoTemplate.insert(gd);
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
