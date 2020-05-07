@@ -26,7 +26,7 @@ public class MainController {
 
       gd.setOutTxt(gf.sortFunc(gd));
 
-      mongoTemplate.insert(gd);
+      mongoTemplate.insert(gd,"GeneratorCollect" );
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }

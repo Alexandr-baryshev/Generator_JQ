@@ -14,8 +14,8 @@ public class SimpleMongoConfig {
    }
 
    @Bean
-   public MongoTemplate mongoTemplateX() throws Exception {
-      return new MongoTemplate(mongoX(), "test");
+   public MongoTemplate mongoTemplate() throws Exception {
+      return new MongoTemplate(mongoX(), "GeneratorDB");
    }
 
 }
