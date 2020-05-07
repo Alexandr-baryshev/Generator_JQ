@@ -78,8 +78,8 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(dataX){
-                let result = dataX.outTxt;
-                $('#outTxt_id').val(result);
+                // let result = dataX.outTxt;
+                $('#outTxt_id').val(dataX.outTxt);
                 },
             failure: function(errMsg) {
                 alert(errMsg);
