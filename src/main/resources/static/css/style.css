@@ -19,11 +19,11 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 /*====================================================*/
 
-body {
-   margin: 0;
-   display: block;
-   background-color: #14202b;
-}
+/*body {*/
+/*   margin: 0;*/
+/*   display: block;*/
+/*   background-color: #14202b;*/
+/*}*/
 
 .container {
 
@@ -36,8 +36,8 @@ body {
 /*--- Верхняя форма ввода ---*/
 
 .TopForm {
-   position: relative;
-   padding: 5px;
+   /*position: relative;*/
+   /*padding: 5px;*/
    background-color: #274655;
 
 }
