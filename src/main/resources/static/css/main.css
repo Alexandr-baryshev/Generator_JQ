@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat");
+}
+
+
+.body {
+    background-color: #33373B;
+}
+
+.navPanel {
+    background-color: #3E3E3E;
+    min-height: 40px;
+}
+
+.navButton {
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    font-style: normal;
+
+    color: #c4c4c4;
+    /*background-color: rgba(255,255,255,0.02);*/
+}
+.navButton:hover {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.navButton:focus {
+    color: #d49292;
+    background-color: rgba(255,255,255,0.1);
+}
