@@ -64,7 +64,7 @@ $(document).ready(function () {
         gdParam.replaceC = $('#replaceC_id').val()
         if ( gdParam.replaceC === "" ) { gdParam.replaceC = "C" }
 
-// НЕ ЗАБЫТЬ ПРО ЭТИ ПОЛЯ !!!!!!!!!!!!
+
         gdParam.positX = $('#positX_id').val()
         gdParam.positY = $('#positY_id').val()
         gdParam.width = $('#width_id').val()
