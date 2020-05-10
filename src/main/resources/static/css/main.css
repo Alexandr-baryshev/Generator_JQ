@@ -25,11 +25,11 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 /*---------------- Маржины разные и т.д. ----------------*/
 
-.m-Left-2 {
+.m-L2 {
   margin-left: 2px;
 }
 
-.m-Top-2 {
+.m-T2 {
   margin-top: 2px;
 }
 
@@ -37,16 +37,37 @@ input:focus, select:focus, textarea:focus, button:focus {
   height: 65%;
 }
 
-.pad_TLR_4px {
+.p-TLR-4 {
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 4px;
 }
-.pad_4 {
+.p_4 {
   padding: 4px;
 }
 
+.m-TB10-L5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
 
+.m-T10-L5 {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.m0-L5 {
+  margin-left: 5px;
+}
+
+.w55-h10 {
+  width: 55px; height: 5px;
+}
+
+.h-10px {
+  height: 10px;
+}
 
 /*-------------------------------------------------*/
 
@@ -77,7 +98,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.stroka {
+.q {
   /*background-color: #4e555b;*/
   /*height: 50px;*/
 }
@@ -104,10 +125,6 @@ body {
 .inputRC {
   background-color: rgba(255, 255, 255, 0.1);
   width: 50px; height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 5px;
-
 
   border-width:  0 0 2px;
   border-color: rgba(255, 255, 255, 0.2);
@@ -133,16 +150,27 @@ body {
 
 .labelParam2 {
   /*background-color: #0c5460;*/
-  width: 50px; height: 20px;
+  width: 50px; height: 10px;
   margin-left: 5px;
   margin-bottom: 0;
-  line-height: 20px;
-
-
-  border-width:  0 0 2px;
-  border-color: rgba(255, 255, 255, 0.2);
+  line-height: 10px;
 
   text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.labelParam3 {
+  /*background-color: #0c5460;*/
+  width: 50px; height: 10px;
+  margin-left: 5px;
+  margin-bottom: 0;
+
+
+  text-align: center;
+  vertical-align: top;
   font-family: 'Montserrat', serif;
   font-size: 10px;
   font-weight: normal;
@@ -158,19 +186,19 @@ body {
 
   min-width: 363px;
   width: 363px !important;
-  height: 272px !important;
+
 }
 
 .commonParam {
   background-color: rgba(255, 255, 255, 0.05);
   width: 363px !important;
-  height: 140px !important;
+
 }
 
 .fieldParam {
   background-color: rgba(255, 255, 255, 0.05);
   width: 363px !important;
-  height: 130px !important;
+
 }
 
 
@@ -180,7 +208,7 @@ body {
 
 .inputBlockRight {
   background-color: rgba(102, 115, 122, 0.12);
-  height: 272px !important;
+  height: 263px !important;
 }
 
 
