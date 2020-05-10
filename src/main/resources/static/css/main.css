@@ -4,6 +4,18 @@
   src: url("../fonts/Montserrat");
 }
 
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #af9f91;
+}
+
 .container, .container-fluid {
   padding: 0;
   margin: 0;
@@ -65,13 +77,83 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.stroka {
+  /*background-color: #4e555b;*/
+  /*height: 50px;*/
+}
 
+
+
+:root { --v-center: 25px; }
+.name-bg {
+  background-color: rgba(255, 255, 255, 0.02);
+  height: var(--v-center);
+  width: 363px !important;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  line-height: var(--v-center);
+
+  font-family: 'Montserrat', serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.inputRC {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 50px; height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+
+
+  border-width:  0 0 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+.inputRC:hover {
+  background-color: rgba(255, 255, 255, 0.2)
+}
+
+.labelParam {
+  width: 55px; height: 20px;
+  text-align: right;
+  font-family: 'Montserrat', serif;
+  font-size: 11px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
+
+.labelParam2 {
+  /*background-color: #0c5460;*/
+  width: 50px; height: 20px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  line-height: 20px;
+
+
+  border-width:  0 0 2px;
+  border-color: rgba(255, 255, 255, 0.2);
+
+  text-align: center;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+}
 
 
 .inputBlockLeft {
 
   border-style: solid;
-  border-width: 0px;
+  border-width: 0;
   border-color: gray;
 
   min-width: 363px;
@@ -109,18 +191,4 @@ body {
 
 }
 
-.labelParam {
-  background-color: rgba(255, 255, 255, 0.02);
-  height: 20px;
-  width: 363px !important;
-  padding-top: 5px;
-  margin: 0;
-
-  text-align: center;
-  font-family: 'Montserrat', serif;
-  font-size: 10px;
-  font-weight: normal;
-  color: #c4c4c4;
-
-}
 
