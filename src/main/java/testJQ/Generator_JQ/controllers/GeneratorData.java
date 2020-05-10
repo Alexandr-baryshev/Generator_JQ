@@ -10,6 +10,7 @@ public class GeneratorData implements Serializable {
 
    private String inputTxt;
    private String outTxt;
+   private String historyOut;
 
    private int startR;
    private int sizeR;
@@ -53,6 +54,13 @@ public class GeneratorData implements Serializable {
       this.outTxt = outTxt;
    }
 
+   public String getHistoryOut() {
+      return historyOut;
+   }
+
+   public void setHistoryOut(String historyOut) {
+      this.historyOut = historyOut;
+   }
 
    public int getStartR() {
       return startR;

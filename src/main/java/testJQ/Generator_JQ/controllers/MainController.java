@@ -26,7 +26,16 @@ public class MainController {
 
       gd.setOutTxt(gf.sortFunc(gd));
 
+      return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
+   }
+
+   @PostMapping("/dataSave")
+   public ResponseEntity<GeneratorData> createX2(@RequestBody GeneratorData gd) {
+
+      gd.setOutTxt(gf.sortFunc(gd));
+
       mongoTemplate.insert(gd,"GeneratorCollect" );
+
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
