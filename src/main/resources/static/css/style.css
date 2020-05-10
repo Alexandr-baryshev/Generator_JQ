@@ -93,7 +93,6 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 
 .inButton {
-
    background-color: rgba(200, 255, 255, 0.5);
    color: #44161b;
 
@@ -105,10 +104,7 @@ input:focus, select:focus, textarea:focus, button:focus {
    width: 90px;
    height: 25px;
    margin-left: 5px;
-
-
 }
-
 .inButton:hover {
    background-color: rgba(200, 255, 255, 0.7);
 }

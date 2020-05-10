@@ -12,8 +12,12 @@ input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 ::placeholder {
-  color: #af9f91;
+  color: #8e8175;
 }
 
 .container, .container-fluid {
@@ -57,16 +61,28 @@ input:focus, select:focus, textarea:focus, button:focus {
   margin-left: 5px;
 }
 
-.m0-L5 {
+.m-L5 {
   margin-left: 5px;
+}
+
+.m-L10 {
+  margin-left: 10px;
 }
 
 .w55-h10 {
   width: 55px; height: 5px;
 }
 
-.h-10px {
-  height: 10px;
+.h-100px {
+  height: 100px;
+}
+
+.w-363px {
+width: 363px !important;
+}
+
+.h-186px {
+  height: 186px !important;
 }
 
 /*-------------------------------------------------*/
@@ -109,7 +125,6 @@ body {
 .name-bg {
   background-color: rgba(255, 255, 255, 0.02);
   height: var(--v-center);
-  width: 363px !important;
   margin: 0;
   padding: 0;
 
@@ -189,34 +204,52 @@ body {
 
 }
 
-.commonParam {
+.inputParam {
   background-color: rgba(255, 255, 255, 0.05);
-  width: 363px !important;
-
 }
-
-.fieldParam {
-  background-color: rgba(255, 255, 255, 0.05);
-  width: 363px !important;
-
-}
-
-
 
 
 
 
 .inputBlockRight {
-  background-color: rgba(102, 115, 122, 0.12);
+  /*background-color: rgba(102, 115, 122, 0.12);*/
   height: 263px !important;
 }
 
 
 
+.button {
+  background-color:#6E6969;
+  padding: 0;
 
-.outSection {
-  background-color: rgba(102, 115, 122, 0.12);
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #c4c4c4;
+
+  border-width: 0;
+
+  width: 80px;
+  height: 30px;
 
 }
+.button:hover {
+  background-color: #725c5c;
+}
 
+.textArea {
+  background-color: rgba(102, 115, 122, 0.12);
+  padding: 2px;
+  border-width: 0;
 
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #b2deda;
+}
+
+.textArea:hover {
+  background-color: rgba(102, 115, 122, 0.3);
+}
