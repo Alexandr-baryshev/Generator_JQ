@@ -13,4 +13,9 @@ public class HTTPController {
       return "generator";
    }
 
+   @GetMapping("/history")
+   public String history(Model model){
+      return "history";
+   }
+
 }
