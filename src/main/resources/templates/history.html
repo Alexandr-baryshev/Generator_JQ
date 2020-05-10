@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/main.css" type="text/css"/>
 
     <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
@@ -26,95 +26,25 @@
 
     </nav>
 
-    <div class="container-fluid d-inline-flex p-TLR-4">
+    <div class="container-fluid d-inline-flex h-75 p_4">
 
-        <div class="inputBlockLeft w-363px">
-
-            <div class="inputParam ">
-
-                <p class="name-bg">Общие параметры</p>
-
-                <div class="q">
-                    <label class="labelParam m-0">Строка</label>
-                    <input type="number" class="inputRC m-TB10-L5" id="startR_id" placeholder="1">
-                    <input type="number" class="inputRC m-TB10-L5" id="sizeR_id" placeholder="1">
-                    <input type="number" class="inputRC m-TB10-L5" id="stepR_id" placeholder="1">
-                    <input type="text" class="inputRC m-TB10-L5" id="targetR_id" placeholder="R1">
-                    <input type="text" class="inputRC m-TB10-L5" id="replaceR_id" placeholder="R">
-                </div>
-
-                <div class="q">
-                    <label class="labelParam m-0">-----------</label>
-                    <label class="labelParam2 ">Начало</label>
-                    <label class="labelParam2 ">Размер</label>
-                    <label class="labelParam2 ">Шаг</label>
-                    <label class="labelParam2 ">Цель</label>
-                    <label class="labelParam2 ">Замена</label>
-
-                </div>
-
-                <div class="q">
-                    <label class="labelParam m-0">Колонка</label>
-                    <input type="number" class="inputRC m-TB10-L5" id="startC_id" placeholder="1">
-                    <input type="number" class="inputRC m-TB10-L5" id="sizeC_id" placeholder="1">
-                    <input type="number" class="inputRC m-TB10-L5" id="stepC_id" placeholder="1">
-                    <input type="text" class="inputRC m-TB10-L5" id="targetC_id" placeholder="С1">
-                    <input type="text" class="inputRC m-TB10-L5" id="replaceC_id" placeholder="С">
-                </div>
-
-            </div>
-
-            <div class="inputParam  m-T2">
-
-                <p class="name-bg">Параметры поля</p>
-
-                <div class="q">
-                    <label class="labelParam m-0">Позиция</label>
-                    <input type="number" class="inputRC m-T10-L5" id="positX_id" placeholder="0">
-                    <input type="number" class="inputRC m-T10-L5" id="positY_id" placeholder="0">
-
-                </div>
-
-                <div class="q">
-                    <label class="w55-h10 m-0 "></label>
-                    <label class="labelParam3 ">X</label>
-                    <label class="labelParam3 ">Y</label>
-                </div>
-
-                <div class="q">
-                    <label class="labelParam m-0">Размер</label>
-                    <input type="number" class="inputRC m-L5" id="width_id" placeholder="20">
-                    <input type="number" class="inputRC m-L5" id="height_id" placeholder="20">
-                </div>
-
-                <div class="q">
-                    <label class="w55-h10 m-0 "></label>
-                    <label class="labelParam3 ">W</label>
-                    <label class="labelParam3 ">H</label>
-                </div>
-            </div>
+        <div class="inputBlockLeft inputParam ">
+            <p class="name-bg">Список событий</p>
+            <ul class="list-group">
+                <li class="list "></li>
+                <li class="list "></li>
+                <li class="list "></li>
+                <li class="list "></li>
+            </ul>
         </div>
 
-        <div class="container-fluid inputBlockRight m-L2">
-            <div class="inputParam">
-                <p class="name-bg">Операции</p>
-                <div>
-                    <button class="button m-TB10-L5 m-L10" id="butt_id">Выполнить</button>
-                    <button class="button m-TB10-L5 m-L10" id="buttSave_id">Выполнить и сохранить</button>
-                </div>
-            </div>
 
-            <textarea class="textArea m-T2 w-100 h-186px" id="inputTxt_id" placeholder="Ввести значение"></textarea>
-
+        <div class="w-100 m-L2">
+            <textarea class="textArea  w-100 h-100" id="historyOut_id" placeholder="Вывод истории"></textarea>
         </div>
 
     </div>
 
-    <div class="container-fluid p_4 h-65">
-
-        <textarea class="container-fluid textArea h-100"id="outTxt_id" readonly></textarea>
-
-    </div>
 
     <footer></footer>
 
