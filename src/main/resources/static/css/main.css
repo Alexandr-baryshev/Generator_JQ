@@ -93,26 +93,32 @@ body {
 
 .navPanel {
   background-color: #3E3E3E;
-  min-height: 40px;
+  height: 40px !important;
 }
 
 .navButton {
   font-family: 'Montserrat', serif;
   font-size: 14px;
   font-style: normal;
-
   color: #c4c4c4;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  height: 40px !important;
+  line-height: 40px;
+  vertical-align: middle;
+
 }
-
 .navButton:hover {
-  color: #c4c4c4;
+  color: #c2aaaa;
   background-color: rgba(255, 255, 255, 0.05);
 }
-
-.navButton:focus {
-  color: #d49292;
-  background-color: rgba(255, 255, 255, 0.1);
+.navButtonActive {
+  color: #c2aaaa;
+  background-color: #33373B
 }
+
 
 .q {
   /*background-color: #4e555b;*/
