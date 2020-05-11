@@ -1,12 +1,12 @@
 package testJQ.Generator_JQ;
 
+import org.springframework.stereotype.Component;
 import testJQ.Generator_JQ.controllers.GeneratorData;
 
 import java.util.UUID;
 
+@Component
 public class GeneratorFunc {
-
-
 
    public String sortFunc(GeneratorData gd) {
 

@@ -10,7 +10,7 @@
 
     <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="js/hello.js"></script>
+    <script type="text/javascript" src="js/history.js"></script>
 
     <!--    ../static/-->
 
@@ -30,17 +30,17 @@
 
         <div class="inputBlockLeft inputParam ">
             <p class="name-bg">Список событий</p>
-            <ul class="list-group">
-                <li class="list "></li>
-                <li class="list "></li>
-                <li class="list "></li>
-                <li class="list "></li>
+            <ul class="list-group" id="list_id">
+                <li class="list " onclick="elementClick()">first</li>
+                <li class="list ">second</li>
+                <li class="list ">third</li>
+                <li class="list ">forth</li>
             </ul>
         </div>
 
 
         <div class="w-100 m-L2">
-            <textarea class="textArea  w-100 h-100" id="historyOut_id" placeholder="Вывод истории"></textarea>
+            <textarea class="textArea  w-100 h-100" id="historyOut_id" placeholder="Вывод истории" readonly></textarea>
         </div>
 
     </div>

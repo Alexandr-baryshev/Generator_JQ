@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
 <head>
     <title>Генератор</title>
     <meta charset="utf-8">
@@ -10,9 +10,9 @@
 
     <script type="text/javascript" src="js/jquery-3.5.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="js/hello.js"></script>
+    <script type="text/javascript" src="js/generator.js"></script>
 
-    <!--    ../static/-->
+    <!--  ../static/  -->
 
 </head>
 
@@ -23,7 +23,8 @@
     <nav class="navbar justify-content-start p-0 navPanel">
         <a class="nav-link navButton" href="/">Генератор</a>
         <a class="nav-link navButton" href="/history">История</a>
-
+<!--        <a class="nav-link navButton" onclick="$('#test2').show(); $('#test1').hide();">Генератор</a>-->
+<!--        <a class="nav-link navButton" onclick="$('#test1').show(); $('#test2').hide();">История</a>-->
     </nav>
 
     <div class="container-fluid d-inline-flex p-TLR-4">
@@ -110,12 +111,13 @@
 
     </div>
 
-    <div class="container-fluid p_4 h-65">
+    <div class="container-fluid p_4 h-65" id="test2">
 
         <textarea class="container-fluid textArea h-100"id="outTxt_id" readonly></textarea>
 
     </div>
 
+<!--    <div class="container-fluid p_4 h-65" id="test1">HHHHHHHHHHHHHHHHHHHHHHHHH</div>-->
     <footer></footer>
 
 </div>

@@ -8,18 +8,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import testJQ.Generator_JQ.GeneratorFunc;
 
+import java.util.List;
+
 
 @RestController
 public class MainController {
 
    @Autowired
-   private GeneratorDataRepository repository;
-
-   @Autowired
    protected MongoTemplate mongoTemplate;
 
-
-   GeneratorFunc gf = new GeneratorFunc();
+   @Autowired
+   GeneratorFunc gf;
 
    @PostMapping("/data")
    public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {
@@ -29,15 +28,24 @@ public class MainController {
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
 
+
    @PostMapping("/dataSave")
    public ResponseEntity<GeneratorData> createX2(@RequestBody GeneratorData gd) {
 
       gd.setOutTxt(gf.sortFunc(gd));
-
-      mongoTemplate.insert(gd,"GeneratorCollect" );
-
+      mongoTemplate.insert(gd, "GeneratorCollect");
 
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
+
+
+   @GetMapping("/getAll")
+   public ResponseEntity<List<GeneratorData>> createX3() {
+
+      List<GeneratorData> r = mongoTemplate.findAll(GeneratorData.class, "GeneratorCollect");
+
+      return new ResponseEntity<>(r, HttpStatus.OK);
+   }
+
 
 }
