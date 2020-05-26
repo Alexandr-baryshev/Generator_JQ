@@ -29,9 +29,6 @@ function gData() {
          gd.inputTxt = "R1 C1"
       }
 
-      gd.outTxt = $('#outTxt_id').val()
-
-
       gd.startR = $('#startR_id').val()
       if (gd.startR === "") {
          gd.startR = 1
