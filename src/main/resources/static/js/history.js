@@ -11,15 +11,15 @@ $(document).ready(function () {
         dataType: "json",
         success: function(dataX){
 
-            $('#list_id').empty()
+            // $('#list_id').empty()
 
             for (let i = 0; i < dataX.length; i++) {
-                let e = dataX[i];
-                let ne = $("<li class='list' onclick='elementClick(event)'>" + e.id + "</li>")
-                ne.data("val", JSON.stringify(e, null , 2))
-                $( "#list_id" ).append(ne)
+                let allJson = dataX[i];
+                let newLi = $("<li class='list' onclick='elementClick(event)'>" + allJson.id + "</li>")
+                newLi.data("vaL", JSON.stringify(allJson, null , 2))
+                $( "#list_id" ).append(newLi)
             }
-            $('#historyOut_id').val();
+            // $('#historyOut_id').val();
         },
         failure: function(errMsg) {
             alert(errMsg);
@@ -27,9 +27,9 @@ $(document).ready(function () {
     });
 });
 
-function elementClick(th) {
-    let li = th.currentTarget
-    let f = $(li).data("val")
-    $('#historyOut_id').val(f);
+function elementClick(cl) {
+    let liHead = cl.currentTarget
+    let ilContent = $(liHead).data("vaL")
+    $('#historyOut_id').val(ilContent);
 }
 
