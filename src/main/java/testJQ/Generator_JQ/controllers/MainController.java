@@ -24,7 +24,6 @@ public class MainController {
    public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {
 
       gd.setOutTxt(gf.sortFunc(gd));
-
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
 
@@ -34,7 +33,6 @@ public class MainController {
 
       gd.setOutTxt(gf.sortFunc(gd));
       mongoTemplate.insert(gd, "GeneratorCollect");
-
       return new ResponseEntity<GeneratorData>(gd, HttpStatus.OK);
    }
 
@@ -43,7 +41,6 @@ public class MainController {
    public ResponseEntity<List<GeneratorData>> createX3() {
 
       List<GeneratorData> r = mongoTemplate.findAll(GeneratorData.class, "GeneratorCollect");
-
       return new ResponseEntity<>(r, HttpStatus.OK);
    }
 

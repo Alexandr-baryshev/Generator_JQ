@@ -1,6 +1,7 @@
 package testJQ.Generator_JQ.controllers;
 
 import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 
 public class GeneratorData implements Serializable {
@@ -30,11 +31,13 @@ public class GeneratorData implements Serializable {
    private int width;
    private int height;
 
-   public GeneratorData() {}
+   public GeneratorData() {
+   }
 
    public String getId() {
       return id;
    }
+
    public void setId(String id) {
       this.id = id;
    }
@@ -43,6 +46,7 @@ public class GeneratorData implements Serializable {
    public String getInputTxt() {
       return inputTxt;
    }
+
    public void setInputTxt(String txtInput) {
       this.inputTxt = txtInput;
    }
@@ -50,6 +54,7 @@ public class GeneratorData implements Serializable {
    public String getOutTxt() {
       return outTxt;
    }
+
    public void setOutTxt(String outTxt) {
       this.outTxt = outTxt;
    }
@@ -65,6 +70,7 @@ public class GeneratorData implements Serializable {
    public int getStartR() {
       return startR;
    }
+
    public void setStartR(int startR) {
       this.startR = startR;
    }
@@ -72,6 +78,7 @@ public class GeneratorData implements Serializable {
    public int getSizeR() {
       return sizeR;
    }
+
    public void setSizeR(int sizeR) {
       this.sizeR = sizeR;
    }
@@ -79,6 +86,7 @@ public class GeneratorData implements Serializable {
    public int getStepR() {
       return stepR;
    }
+
    public void setStepR(int stepR) {
       this.stepR = stepR;
    }
@@ -87,6 +95,7 @@ public class GeneratorData implements Serializable {
    public int getStartC() {
       return startC;
    }
+
    public void setStartC(int startC) {
       this.startC = startC;
    }
@@ -94,6 +103,7 @@ public class GeneratorData implements Serializable {
    public int getSizeC() {
       return sizeC;
    }
+
    public void setSizeC(int sizeC) {
       this.sizeC = sizeC;
    }
@@ -101,6 +111,7 @@ public class GeneratorData implements Serializable {
    public int getStepC() {
       return stepC;
    }
+
    public void setStepC(int stepC) {
       this.stepC = stepC;
    }
@@ -109,6 +120,7 @@ public class GeneratorData implements Serializable {
    public int getPositX() {
       return positX;
    }
+
    public void setPositX(int positX) {
       this.positX = positX;
    }
@@ -116,6 +128,7 @@ public class GeneratorData implements Serializable {
    public int getPositY() {
       return positY;
    }
+
    public void setPositY(int positY) {
       this.positY = positY;
    }
@@ -123,6 +136,7 @@ public class GeneratorData implements Serializable {
    public int getWidth() {
       return width;
    }
+
    public void setWidth(int width) {
       this.width = width;
    }
@@ -130,6 +144,7 @@ public class GeneratorData implements Serializable {
    public int getHeight() {
       return height;
    }
+
    public void setHeight(int height) {
       this.height = height;
    }

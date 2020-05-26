@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HTTPController {
 
    @GetMapping("/")
-   public String generator(Model model){
+   public String generator(Model model) {
       return "generator";
    }
 
    @GetMapping("/history")
-   public String history(Model model){
+   public String history(Model model) {
       return "history";
    }
 

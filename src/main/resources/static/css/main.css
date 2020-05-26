@@ -253,6 +253,8 @@ body {
   font-size: 12px;
   font-weight: normal;
   color: #b2deda;
+  height: 70vh;
+
 }
 
 .textArea:hover {
