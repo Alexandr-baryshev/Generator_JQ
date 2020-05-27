@@ -50,9 +50,9 @@ function gData() {
       }
 
       gd.replaceR = $('#replaceR_id').val()
-      if (gd.replaceR === "") {
-         gd.replaceR = "R"
-      }
+      // if (gd.replaceR === "") {
+      //    gd.replaceR = "R"
+      // }
 
 
       gd.startC = $('#startC_id').val()
@@ -76,9 +76,9 @@ function gData() {
       }
 
       gd.replaceC = $('#replaceC_id').val()
-      if (gd.replaceC === "") {
-         gd.replaceC = "C"
-      }
+      // if (gd.replaceC === "") {
+      //    gd.replaceC = "C"
+      // }
 
       gd.positX = $('#positX_id').val()
       gd.positY = $('#positY_id').val()
