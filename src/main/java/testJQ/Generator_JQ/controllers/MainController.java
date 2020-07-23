@@ -1,6 +1,9 @@
 package testJQ.Generator_JQ.controllers;
 
 
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoDatabase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
@@ -13,6 +16,7 @@ import java.util.List;
 
 @RestController
 public class MainController {
+
 
    @Autowired
    protected MongoTemplate mongoTemplate;
@@ -45,4 +49,8 @@ public class MainController {
    }
 
 
+
 }
+
+
+
