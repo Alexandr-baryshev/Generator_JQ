@@ -1,7 +1,6 @@
-package testJQ.Generator_JQ;
+package testJQ.Generator_JQ.model;
 
 import org.springframework.stereotype.Component;
-import testJQ.Generator_JQ.controllers.GeneratorData;
 
 import java.util.UUID;
 

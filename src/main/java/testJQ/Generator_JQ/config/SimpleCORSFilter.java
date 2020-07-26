@@ -1,4 +1,4 @@
-package testJQ.Generator_JQ;
+package testJQ.Generator_JQ.config;
 
 import java.io.IOException;
 import javax.servlet.Filter;

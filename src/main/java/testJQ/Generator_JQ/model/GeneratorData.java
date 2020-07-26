@@ -1,9 +1,7 @@
-package testJQ.Generator_JQ.controllers;
+package testJQ.Generator_JQ.model;
 
 import java.io.Serializable;
-
 import org.springframework.data.annotation.Id;
-
 public class GeneratorData implements Serializable {
 
    @Id

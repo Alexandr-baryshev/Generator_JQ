@@ -13,14 +13,15 @@ public class HTTPController {
 //      return "index";
 //   }
 
+   @GetMapping("/")
+   public String generator(Model model) {
+      return "generator";
+   }
+
    @GetMapping("/history")
    public String history(Model model) {
       return "history";
    }
 
-   @GetMapping("/generator")
-   public String generator(Model model) {
-      return "generator";
-   }
 
 }

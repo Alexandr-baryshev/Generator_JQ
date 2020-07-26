@@ -1,16 +1,14 @@
 package testJQ.Generator_JQ.controllers;
 
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import com.mongodb.client.MongoDatabase;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import testJQ.Generator_JQ.GeneratorFunc;
-
+import testJQ.Generator_JQ.model.GeneratorData;
+import testJQ.Generator_JQ.model.GeneratorFunc;
 import java.util.List;
 
 
@@ -23,6 +21,7 @@ public class MainController {
 
    @Autowired
    GeneratorFunc gf;
+
 
    @PostMapping("/data")
    public ResponseEntity<GeneratorData> createX(@RequestBody GeneratorData gd) {

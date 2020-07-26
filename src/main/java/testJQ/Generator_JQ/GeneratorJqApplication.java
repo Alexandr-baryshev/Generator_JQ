@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
 @EnableAutoConfiguration
-public class GeneratorJqApplication  {
+public class  GeneratorJqApplication  {
 
 	public static void main(String[] args) {
 
